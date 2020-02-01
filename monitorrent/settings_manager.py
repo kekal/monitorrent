@@ -144,7 +144,7 @@ class SettingsManager(object):
 
     @property
     def requests_timeout(self):
-        return float(self._get_settings(self.__requests_timeout, 10))
+        return float(self._get_settings(self.__requests_timeout, 30))
 
     @requests_timeout.setter
     def requests_timeout(self, value):
