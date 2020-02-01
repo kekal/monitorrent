@@ -21,7 +21,7 @@ import html
 
 PLUGIN_NAME = 'lostfilm.tv'
 
-scraper = cloudscraper.create_scraper()
+scraper = cloudscraper.create_scraper(timeout=30)
 
 class LostFilmTVSeries(Topic):
     __tablename__ = "lostfilmtv_series"
